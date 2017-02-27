@@ -30,12 +30,12 @@ $(document).ready(function() {
 
         $(".adventures").last().click(function() {
             $("#show-adventures").show();
-            $("#show-adventures h2").text(newContact.resort);
-            $(".resort").text(newContact.resort);
-            $(".destination").text(newContact.destination);
-            $(".time").text(newContact.time);
-            $(".landmarks").text(newContact.landmarks);
-            $(".experience").text(newContact.experience);
+            $("#show-adventures h2").text(newAdventure.resort);
+            $(".resort").text(newAdventure.resort);
+            $(".destination").text(newAdventure.destination);
+            $(".time").text(newAdventure.time);
+            $(".landmarks").text(newAdventure.landmarks);
+            $(".experience").text(newAdventure.experience);
         });
 
     });
