@@ -14,7 +14,7 @@ $(document).ready(function() {
 
         var inputtedResort = $("input#resort").val();
         var inputtedDestination = $("input#destination").val();
-        var inputtedTime = $("select#time").val();
+        var inputtedTime = $("select#time").val().toUpperCase();
         var inputtedLandmarks = $("input#landmarks").val();
         var inputtedExperience = $("input#experience").val();
 
