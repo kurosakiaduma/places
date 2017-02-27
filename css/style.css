@@ -2,6 +2,10 @@
     font-family: 'Sansita', sans-serif;
 }
 
+body{
+    background-image: url("http://wallpapers-and-backgrounds.net/wp-content/uploads/2015/10/white-abstract-background_1.jpg");
+}
+
 #show-adventures {
     display: none;
 }
