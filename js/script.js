@@ -2,7 +2,7 @@
 function Adventure(resort, destination, time, landmarks, experience) {
     this.resort = resort;
     this.destination = destination;
-    this.time =  time;
+    this.time = time;
     this.landmarks = landmarks;
     this.experience = experience;
 }
@@ -20,12 +20,23 @@ $(document).ready(function() {
 
         var newAdventure = new Adventure(inputtedResort, inputtedDestination, inputtedTime, inputtedLandmarks, inputtedExperience);
 
-        $("ul#travels").append("<li><span class='contact'>" + newAdventure.time.toUpperCase() + "</span></li>");
+        $("ul#travels").append("<li><span class='adventures'>" + newAdventure.resort + "</span></li>");
 
         $("input#resort").val("");
         $("input#destination").val("");
         $("select#time").val("");
         $("input#landmarks").val("");
         $("input#experience").val("");
-});
+
+        $(".adventures").last().click(function() {
+            $("#show-adventures").show();
+            $("#show-adventures h2").text(newContact.resort);
+            $(".resort").text(newContact.resort);
+            $(".destination").text(newContact.destination);
+            $(".time").text(newContact.time);
+            $(".landmarks").text(newContact.landmarks);
+            $(".experience").text(newContact.experience);
+        });
+
+    });
 });
